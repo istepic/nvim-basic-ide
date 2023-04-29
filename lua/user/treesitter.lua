@@ -38,7 +38,7 @@ configs.setup({
       enable = true,
       enable_autocmd = false,
     },
-  }
+  })
 end
 
 return M
