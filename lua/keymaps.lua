@@ -81,3 +81,6 @@ keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
 
 -- Lsp
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
+
+-- Copy mode
+keymap("n", "<leader>cm", "<ESC>:exec &mouse!=\"\"? \"set mouse=|set nonu\" : \"set mouse=nv|set number\"<CR>")
